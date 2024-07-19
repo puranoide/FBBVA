@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif;
+}
+body{
+    background-image: url(img/fondologin1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form-login{
+    backdrop-filter: blur(5px);
+    background-color: rgba(147, 86, 153, 0.315);
+    display: inline-block;
+    margin-left: 38%;
+    margin-top: 10%;
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+}
+
+.form-login h1{
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    color: #ddb9ff;
+    text-shadow: 0 0 1px #ddb9ff, 0 0 10px #ddb9ff, 0 0 15px #ddb9ff, 0 0 20px #ddb9ff, 0 0 30px #ddb9ff, 0 0 40px #ddb9ff, 0 0 55px #ddb9ff, 0 0 75px #ddb9ff; /* Crear el efecto de resplandor */
+    animation: neon-glow 1s infinite alternate; /* Animación para que parpadee */
+    margin-top: 5%;
+}
+
+
+
+@keyframes neon-glow {
+    from {
+      text-shadow: 0 0 5px #ddb9ff, 0 0 10px #ddb9ff, 0 0 15px #ddb9ff, 0 0 20px #ddb9ff, 0 0 30px #ddb9ff, 0 0 40px #ddb9ff, 0 0 55px #ddb9ff, 0 0 75px #ddb9ff; /* Tamaño y color inicial */
+    }
+    to {
+      text-shadow: 0 0 10px #ddb9ff, 0 0 20px #ddb9ff, 0 0 30px #ddb9ff, 0 0 40px #ddb9ff, 0 0 50px #ddb9ff, 0 0 60px #ddb9ff, 0 0 70px #ddb9ff, 0 0 80px #ddb9ff; /* Tamaño y color final */
+    }
+}
+
+.form-login input{
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 35%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.form-login button{
+    background-color: #f0e0ff;
+    margin-top: 10%;
+    margin-left: 24%;
+    width: 150px;
+    height:40px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(195, 136, 250)
+}
+.form-login button:hover{
+   background-color: #e5cdfc;
+   scale: 1.1;
+}

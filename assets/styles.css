@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: rgba(147, 86, 153, 0.315);
+}
+.conteiner-inputs-selects {
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.FormPost {
+    margin-left: 35%;
+    width: 600px;
+    height: 700px;
+}
+.divscontainer {
+    display: flex;
+   
+    height: 400px;
+}
+.divscontainer div {
+    
+    height: 400px;
+    flex: 1; /* Asegura que ambos divs tengan el mismo ancho */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.divscontainer-edit {
+    display: inline-flex;
+}
+.divscontainer-edit input {
+    display: block;
+}
+.FormPost p {
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.FormPost button {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+.conteiner-todosPost {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 20px;
+}
+.post-container {
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.post-container p {
+    font-size: smaller;
+    margin: 1px 0;
+    padding: 5px;
+}
+.post-container button {
+    width: 100%;
+}
+.FormParaFiltro {
+    background-color: aqua;
+    margin-left: 5%;
+    width: 90%;
+    height: 3%;
+}
+.FormParaFiltro p {
+    text-align: center;
+}
+.conteiner-inputs-selects-filtro {
+    margin-left: 18%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Estilo específico para los inputs en los contenedores */
+.divscontainer input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/* Estilos para la tabla */
+.tablereport {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    border: solid;
+    border-collapse: collapse; /* Asegura que los bordes colapsen, eliminando el espacio entre celdas */
+    width: 96%; /* Asegura que la tabla ocupe un ancho considerable de su contenedor */
+}
+
+.tablereport th, .tablereport td {
+    border: solid; /* Aplica bordes a las celdas */
+    padding: 10px; /* Añadir padding para mejorar la legibilidad */
+    text-align: center; /* Centrar el texto en las celdas */
+    vertical-align: middle; /* Alinea el contenido verticalmente al centro */
+    margin: 0; /* Elimina cualquier margen alrededor de las celdas */
+}
