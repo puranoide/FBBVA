@@ -15,7 +15,7 @@ function actualizarFormulario() {
     <p class="nombrePost">El nombre de la publicacion sera la siguiente: ${NombrePostCompleto}</p>
     <div class="divscontainer">
         <div>
-            <h1>Anuncios</h1>
+            <h1> 1. Anuncios</h1>
             <input type="number" name="alcanceInorganico" placeholder="Alcance ADS">
             <input type="number" name="interacionesInorganico" placeholder="Interacciones ADS">
             <input type="number" name="clicksInorganico" placeholder="Clicks ADS">
@@ -25,7 +25,7 @@ function actualizarFormulario() {
             
         </div>
         <div>
-            <h1>Publicacion</h1>
+            <h1> 2. Publicacion</h1>
             <input type="text" value="facebook" readonly name="formType" hidden>
             <input type="text" value="${seleccionFundacion}" readonly name="Fundation" hidden>
             <input type="text" value="${seleccionObjetivo}" readonly name="Goal" hidden>
@@ -52,7 +52,7 @@ function actualizarFormulario() {
 
     <div class="divscontainer">
         <div>
-        <h1>Anuncios</h1> 
+        <h1> 1. Anuncios</h1> 
         <input type="number" name="alcanceInorganico" placeholder="Alcance ADS">
         <input type="number" name="interacionesInorganico" placeholder="Interacciones ADS">
         <input type="number" name="seguidoresInorganicos" placeholder="Seguidores ADS">
@@ -61,7 +61,7 @@ function actualizarFormulario() {
         
         </div>
         <div>
-        <h1>Publicacion</h1>
+        <h1> 2. Publicacion</h1>
         <input type="number" name="AlcanceTotal" placeholder="Alcance POST">
     
         <input type="number" name="interacionestotal" placeholder="Interacciones POST">

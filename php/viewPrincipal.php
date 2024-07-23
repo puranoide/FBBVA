@@ -69,6 +69,9 @@ if($_SESSION['rol']==1){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
     <title>Inicio del portal</title>
 </head>
@@ -81,18 +84,21 @@ if($_SESSION['rol']==1){
     <br>
 
 
-    <form action="cerrar_sesion.php">
-        <button>cerrar sesion</button>
-    </form>
-<div class="conteiner-inputs-selects">
+    <div class="pr_titulos_pg_principal">
+                <h1>Guarda tus metricas <br> De redes sociales fazt</h1>
+                <h3>Rellena los siguientes datos para <br> crear tu registro de metricas.</h3>
+    </div>   
+<div class="pr_caja_de_formulario">
+    <div class="conteiner-inputs-selects">
+
         <select id="seleccionFundacion" onchange="actualizarFormulario()">
-            <option value="">Selecciona una fundacion</option>
+            <option value="">Fundacion</option>
             <option value="Faromedic">Faromedic</option>
             <option value="FBBVA">FBBVA</option>
         </select>
     
         <select id="seleccion" onchange="actualizarFormulario()">
-            <option value="">Selecciona una red social</option>
+            <option value="">Red social</option>
             <option value="FB">Facebook</option>
             <option value="IG">Instagram</option>
             
@@ -102,15 +108,18 @@ if($_SESSION['rol']==1){
         
         
         <select id="seleccionObjetivo" onchange="actualizarFormulario()">
-            <option value="">Selecciona un objetivo</option>
+            <option value="">Objetivo</option>
             <option value="PPL">PPL</option>
             <option value="PPA">PPA</option>
         </select>
-        <input type="text" name="Fecha Campaña" id="NombreEscritoCampania" oninput="actualizarFormulario()">
+        <input placeholder="Nombre" type="text" name="Fecha Campaña" id="NombreEscritoCampania" oninput="actualizarFormulario()">
     </div>
     <form id="formulario"  action="postdata.php" method="post" class="FormPost">
         <!-- Campos del formulario que se actualizarán dinámicamente -->
     </form>
+
+</div>
+
 
 
 
@@ -121,5 +130,7 @@ if($_SESSION['rol']==1){
 
  <script src="../assets/app.js"></script>
  <script src="../assets/appFiltrar.js"></script>
+
+
 </body>
 </html>

@@ -72,6 +72,10 @@ if($_SESSION['rol']==1){
     echo $componente;
     ?>
 
+<div class="pr_titulos_pg_principal">
+                <h1>Buscar registros</h1>
+                <h3>Realiza una busqueda en tus registros guardados</h3>
+    </div>  
 <div class="conteiner-inputs-selects-filtro">
             <select id="seleccionFundacionFiltro" onchange="ActualizarForm()">
                 <option value="">Selecciona una fundacion</option>
